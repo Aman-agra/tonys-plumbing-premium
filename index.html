@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tony's Plumbing, Inc.</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="is-loading">
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <div class="loader-overlay">
+    <div class="cube" aria-hidden="true">
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+    </div>
+  </div>
+
+  <div class="intro-sweep"></div>
+  
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Home">Tony's</a>
+    <div class="title" aria-hidden="true"><div class="title-inner">Menu</div></div>
+    <button class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu">
+    <nav class="nav">
+      <div class="title" style="margin-bottom: 2rem;">Menu</div>
+      <ul class="main" style="padding:0; list-style:none;">
+        <li style="margin-bottom:1rem;"><a class="link" href="index.html">Home</a></li>
+        <li style="margin-bottom:1rem;"><a class="link" href="about.html">About</a></li>
+        <li style="margin-bottom:1rem;"><a class="link" href="services.html">Services</a></li>
+        <li style="margin-bottom:1rem;"><a class="link" href="areas.html">Areas</a></li>
+        <li style="margin-bottom:1rem;"><a class="link" href="careers.html">Careers</a></li>
+        <li style="margin-bottom:1rem;"><a class="link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:3109058484" class="base-button is-white" style="margin-top: 3rem;">Call (310) 905-8484</a>
+    </nav>
+    <div class="background"></div>
+  </div>
+
+  <main class="main">
+    <div class="scroll">
+      <div class="content page-transition">
+
+        <section class="home-header" style="min-height: 100vh;">
+          <div class="background">
+            <img src="images/hero-bg.jpg" alt="Tony's Plumbing" class="base-image parallax-media" />
+          </div>
+          <div class="container" style="width:100%;">
+            <div class="row">
+              <h1 class="base-heading reveal" style="max-width: 90rem; font-size: clamp(5rem, 8vw, 9rem); line-height: 1; letter-spacing: -0.05em;">
+                Exceptional plumbing for those who expect the best.
+              </h1>
+            </div>
+            <div class="row reveal delay-1" style="display:flex; justify-content:space-between; align-items:flex-end; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 4rem; margin-top:4rem; flex-wrap:wrap; gap:4rem;">
+              <h2 class="base-title">Since 1994</h2>
+              <div style="flex:1; min-width:300px; display:flex; justify-content:flex-end;">
+                  <p class="text" style="max-width: 50rem; font-size: 2.2rem; font-weight: 500;">
+                    Family-owned and serving the South Bay for over 32 years. 10,150+ happy clients trust Tony's Plumbing for honest work at fair prices. Every job starts with a free estimate from Tony himself.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section style="background:var(--color-cream); color:var(--color-black); padding: 5rem 0 10rem;">
+          <div class="container reveal">
+            <div class="stats-grid hover-card" style="padding: 4rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 2rem; background: #fff;">
+                <div>
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="stat-number">32</div>
+                    <div class="stat-label">Years in Business</div>
+                </div>
+                <div>
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">Expert Technicians</div>
+                </div>
+                <div>
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Star Rating</div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container reveal" style="display:flex; justify-content:space-between; width:100%; z-index:2; align-items:flex-start; flex-wrap:wrap; gap:4rem;">
+            <div style="max-width:30rem;">
+              <div style="font-size:2rem; font-weight:700; font-family:var(--font-f-aeonik-mono); text-transform:uppercase; letter-spacing:0.2em; margin-bottom:2rem; color: var(--color-taupe);">Tony's</div>
+              <p class="text" style="opacity:0.6; margin-bottom:4rem;">Licensed, insured, and trusted by over 10,150 clients. CA Lic #685559</p>
+              <a href="contact.html" class="base-button is-white">Request Service Online</a>
+            </div>
+            <div style="display:flex; gap: 8rem; opacity: 0.8; flex-wrap:wrap;">
+              <ul style="list-style:none; padding:0; margin:0; line-height:2.5;">
+                <li style="font-family:var(--font-f-aeonik-mono); text-transform:uppercase; font-size:1.2rem; margin-bottom:1rem; opacity:0.6; letter-spacing:0.1em;">Quick Links</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="areas.html">Service Areas</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

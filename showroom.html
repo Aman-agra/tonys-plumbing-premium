@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Showroom - Fluid Glass</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="label"></div>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div class="loader-overlay">
+    <div class="cube" aria-hidden="true">
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+      <div class="cube-face"></div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Home">
+      <svg width="42" height="42" class="brandmark-svg" fill="none" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M1024 256v512l-512 256L0 768V256L512 0z"/></svg>
+    </a>
+    <div class="title" aria-hidden="true">
+      <div class="title-inner">Menu</div>
+    </div>
+    <button class="burger" aria-label="Menu">
+      <svg width="20" height="11" class="burger-svg" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.5h20" stroke="currentColor"/><path d="M0 5.5h20" stroke="currentColor"/><path d="M0 10.5h20" stroke="currentColor"/></svg>
+    </button>
+    <button class="close" aria-label="Close">
+      <svg width="13" height="13" class="close-svg" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.353516 0.353589l11.6672 11.6673" stroke="currentColor"/><path d="M0.353516 12.0208l11.6672-11.6673" stroke="currentColor"/></svg>
+    </button>
+    <div class="background"></div>
+  </header>
+
+  <!-- Full Screen Menu Dropdown -->
+  <div class="menu">
+    <nav class="nav">
+      <div class="title">Menu</div>
+      <ul class="main">
+        <li class="item"><div class="mask"><a class="link page-transition" href="about.html">About</a></div></li>
+        <li class="item"><div class="mask"><a class="link page-transition" href="collection.html">Collection</a></div></li>
+        <li class="item"><div class="mask"><a class="link page-transition" href="approach.html">Approach</a></div></li>
+        <li class="item"><div class="mask"><a class="link page-transition" href="showroom.html">Showroom</a></div></li>
+        <li class="item"><div class="mask"><a class="link page-transition" href="contact.html">Contact</a></div></li>
+      </ul>
+      <button class="base-button is-black" style="margin-top: 4rem;">
+        <span class="label"><span class="line">Get a quote</span><span class="line">Get a quote</span></span>
+      </button>
+    </nav>
+    <div class="background"></div>
+  </div>
+
+  <main class="main">
+    <div class="scroll">
+      <div class="content page-transition is-visible">
+
+        <section class="banner-showroom" style="position:relative; height: 100svh; display:flex; align-items:center;">
+          <img src="https://a.storyblok.com/f/287789457689273/3200x1800/f87985ae68/banner-showroom.jpg/m/3840x2160/filters:format(avif,webp):quality(80)" alt="Showroom" class="base-image parallax-media" style="position:absolute; inset:0; z-index:-1; opacity:0.6;" />
+          <div class="container reveal">
+            <h2 class="base-title" style="color:var(--color-white); margin-bottom: 2rem;">Showroom</h2>
+            <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+              <p class="base-heading" style="color:var(--color-white); max-width:50rem;">Experience our quality firsthand.</p>
+              <div style="text-align:right; color:var(--color-white);">
+                <p class="text" style="opacity:0.8; margin-bottom:2rem;">Orbital 25 Business Park, Unit 11<br/>Watford WD18 9DA, UK</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Details -->
+        <section style="padding: 10rem 0;">
+          <div class="container reveal delay-1">
+            <h2 class="base-title" style="margin-bottom: 4rem;">Opening Hours & Contact</h2>
+            <div style="display:flex; gap: 8rem; align-items:flex-start;">
+              <div>
+                <p class="text" style="font-family: var(--font-f-aeonik-mono); font-size: 1.4rem; text-transform: uppercase; margin-bottom:1rem;">Hours</p>
+                <p class="text">Monday - Friday: 9am - 5pm<br>Saturday: By Appointment<br>Sunday: Closed</p>
+              </div>
+              <div>
+                <p class="text" style="font-family: var(--font-f-aeonik-mono); font-size: 1.4rem; text-transform: uppercase; margin-bottom:1rem;">Contact</p>
+                <p class="text"><a href="tel:02081567290">020 8156 7290</a><br><a href="mailto:sales@fluid.glass">sales@fluid.glass</a></p>
+              </div>
+            </div>
+            
+            <img src="https://a.storyblok.com/f/287789457689273/1600x2074/fc4dd98445/home-mood-2.jpg/m/3840x0/filters:format(avif,webp):quality(80)" alt="Showroom Interior" style="width:100%; height:80vh; object-fit:cover; margin-top:8rem; border-radius:1.6rem;" class="parallax-media">
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="wordmark"></div>
+          <div class="container reveal" style="display:flex; justify-content:space-between; width:100%; z-index:2; align-items:flex-start;">
+            <div style="max-width:30rem;">
+              <h2 class="base-title" style="margin-bottom:2rem;">Fluid Glass</h2>
+              <p class="text" style="opacity:0.6; margin-bottom:4rem;">Structural & Architectural Glazing Specialists.</p>
+              <a href="contact.html" class="base-button is-white">
+                <div class="label"><span class="line">Contact Us</span><span class="line">Contact Us</span></div>
+              </a>
+            </div>
+            
+            <div style="display:flex; gap: 8rem; opacity: 0.8;">
+              <ul style="list-style:none; padding:0; margin:0; line-height:2;">
+                <li><a href="about.html">About</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="approach.html">Approach</a></li>
+                <li><a href="showroom.html">Showroom</a></li>
+              </ul>
+              <ul style="list-style:none; padding:0; margin:0; line-height:2;">
+                <li><a href="mailto:sales@fluid.glass">sales@fluid.glass</a></li>
+                <li><a href="tel:02081567290">020 8156 7290</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="container reveal delay-2" style="display:flex; justify-content:space-between; width:100%; z-index:2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; margin-top:4rem;">
+            <p class="text" style="font-size:1.2rem; opacity:0.6;">&copy; 2026 Fluid Glass. All rights reserved.</p>
+            <div style="display:flex; gap: 2rem; font-size:1.2rem; opacity:0.6;">
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Pinterest</a>
+            </div>
+          </div>
+        </footer>
+
+      </div> <!-- .content -->
+    </div> <!-- .scroll -->
+  </main>
+
+</body>
+</html>
